@@ -1,9 +1,9 @@
-import React from 'react'
+import DashboardLayout from "../../components/layout/DashboardLayout";
 
-const Users = () => {
+export default function Users() {
   return (
-    <div>Users</div>
-  )
+    <DashboardLayout>
+      <h1 className="text-2xl font-bold">Users</h1>
+    </DashboardLayout>
+  );
 }
-
-export default Users

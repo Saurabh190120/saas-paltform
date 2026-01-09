@@ -1,9 +1,9 @@
-import React from 'react'
+import DashboardLayout from "../../components/layout/DashboardLayout";
 
-const Settings = () => {
+export default function Settings() {
   return (
-    <div>Settings</div>
-  )
+    <DashboardLayout>
+      <h1 className="text-2xl font-bold">Settings</h1>
+    </DashboardLayout>
+  );
 }
-
-export default Settings
