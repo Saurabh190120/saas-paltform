@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-br from-indigo-600/20 to-transparent" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-36 text-center">
           <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
