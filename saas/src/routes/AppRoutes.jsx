@@ -5,11 +5,13 @@ import Users from "../pages/dashboard/Users";
 import Settings from "../pages/dashboard/Settings";
 import ProtectedRoute from "./ProtectedRoute";
 import Register from "../pages/auth/Register";
+import Home from "../pages/Home";
 
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route
         path="/dashboard"
