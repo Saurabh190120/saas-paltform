@@ -2,127 +2,135 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-slate-950 text-slate-100">
 
-      {/* ================= Top Bar ================= */}
-      <header className="border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold tracking-tight">
-            SaaS<span className="text-blue-600">Flow</span>
+      {/* ================= NAVBAR ================= */}
+      <header className="border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+          <h1 className="text-xl font-semibold tracking-wide">
+            Nova<span className="text-indigo-400">Suite</span>
           </h1>
 
-          <nav className="flex items-center gap-6">
-            <Link to="/login" className="text-sm font-medium hover:text-blue-600">
+          <nav className="flex items-center gap-6 text-sm">
+            <Link to="/login" className="text-slate-300 hover:text-white">
               Login
             </Link>
             <Link
               to="/register"
-              className="bg-blue-600 text-white text-sm px-5 py-2 rounded-lg"
+              className="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg"
             >
-              Get Started
+              Start Free
             </Link>
           </nav>
         </div>
       </header>
 
-      {/* ================= Hero ================= */}
+      {/* ================= HERO ================= */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent" />
 
-        <div className="relative max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-5xl font-bold leading-tight mb-6">
-              Manage Your Business  
-              <span className="block text-blue-600">From One Dashboard</span>
-            </h2>
+        <div className="relative max-w-7xl mx-auto px-6 py-36 text-center">
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            One Platform.
+            <span className="block text-indigo-400">
+              Total Control.
+            </span>
+          </h2>
 
-            <p className="text-gray-600 text-lg mb-8">
-              SaaSFlow helps you track users, manage roles, and scale faster
-              with a clean and secure platform.
-            </p>
-
-            <div className="flex gap-4">
-              <Link
-                to="/register"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium"
-              >
-                Start Free
-              </Link>
-              <Link
-                to="/login"
-                className="border border-gray-300 px-6 py-3 rounded-lg font-medium"
-              >
-                Login
-              </Link>
-            </div>
-          </div>
-
-          {/* Right visual placeholder */}
-          <div className="hidden md:block">
-            <div className="h-80 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 shadow-xl" />
-          </div>
-        </div>
-      </section>
-
-      {/* ================= Feature Highlights ================= */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-10">
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Secure Authentication
-              </h3>
-              <p className="text-gray-600">
-                Industry-standard login, protected routes, and token-based security.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Role-Based Access
-              </h3>
-              <p className="text-gray-600">
-                Control what users can see and manage with flexible permissions.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Scalable Architecture
-              </h3>
-              <p className="text-gray-600">
-                Built to grow with your product and team.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ================= CTA ================= */}
-      <section className="py-24">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-4xl font-bold mb-6">
-            Start Building Today
-          </h3>
-          <p className="text-gray-600 mb-8">
-            Create an account and experience a modern SaaS workflow.
+          <p className="max-w-2xl mx-auto text-slate-300 text-lg mb-10">
+            NovaSuite helps teams manage users, roles, and insights
+            through a secure and scalable SaaS dashboard.
           </p>
-          <Link
-            to="/register"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-medium"
-          >
-            Create Free Account
-          </Link>
+
+          <div className="flex justify-center gap-4">
+            <Link
+              to="/register"
+              className="bg-indigo-500 hover:bg-indigo-600 px-8 py-4 rounded-xl font-medium"
+            >
+              Get Started
+            </Link>
+            <Link
+              to="/login"
+              className="border border-slate-700 px-8 py-4 rounded-xl font-medium"
+            >
+              Login
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ================= Footer ================= */}
-      <footer className="border-t py-6 text-center text-sm text-gray-500">
-        © 2026 SaaSFlow. Built with React & Tailwind.
-      </footer>
+      {/* ================= STATS ================= */}
+      <section className="py-24 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+          <div>
+            <h3 className="text-4xl font-bold text-indigo-400">99.9%</h3>
+            <p className="text-slate-400 mt-2">Uptime Reliability</p>
+          </div>
+          <div>
+            <h3 className="text-4xl font-bold text-indigo-400">10x</h3>
+            <p className="text-slate-400 mt-2">Faster Workflows</p>
+          </div>
+          <div>
+            <h3 className="text-4xl font-bold text-indigo-400">Secure</h3>
+            <p className="text-slate-400 mt-2">JWT Auth & RBAC</p>
+          </div>
+        </div>
+      </section>
 
+      {/* ================= FEATURES ================= */}
+      <section className="py-28 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <h3 className="text-3xl font-bold text-center mb-16">
+            Built for Modern Teams
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-12">
+            <Feature
+              title="Authentication & Security"
+              desc="Secure login, protected routes, and token-based authorization."
+            />
+            <Feature
+              title="Role-Based Dashboards"
+              desc="Different experiences for admins and users."
+            />
+            <Feature
+              title="Scalable Architecture"
+              desc="Designed for growth, performance, and maintainability."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ================= FINAL CTA ================= */}
+      <section className="py-32 text-center">
+        <h3 className="text-4xl font-bold mb-6">
+          Start Your SaaS Journey Today
+        </h3>
+        <p className="text-slate-400 mb-10">
+          No credit card required. Set up in minutes.
+        </p>
+        <Link
+          to="/register"
+          className="bg-indigo-500 hover:bg-indigo-600 px-10 py-4 rounded-xl font-semibold"
+        >
+          Create Free Account
+        </Link>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="border-t border-slate-800 py-6 text-center text-sm text-slate-500">
+        © 2026 NovaSuite. Crafted with React & Tailwind.
+      </footer>
+    </div>
+  );
+}
+
+/* ===== Local Feature Component ===== */
+function Feature({ title, desc }) {
+  return (
+    <div className="bg-slate-950 border border-slate-800 rounded-xl p-8">
+      <h4 className="text-xl font-semibold mb-3">{title}</h4>
+      <p className="text-slate-400">{desc}</p>
     </div>
   );
 }
