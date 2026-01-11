@@ -21,6 +21,17 @@ export default function Login() {
       navigate("/dashboard", { replace: true });
     }
   };
+// inside handleSubmit()
+if (formData.email && formData.password) {
+  // TEMP role logic (replace with backend later)
+  const role = formData.email.includes("admin") ? "admin" : "user";
+
+  localStorage.setItem("isAuthenticated", "true");
+  localStorage.setItem("role", role);
+
+  navigate("/dashboard", { replace: true });
+}
+// inside handleSubmit()
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center">
