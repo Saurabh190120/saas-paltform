@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Input = () => {
-  return (
+  return (<>
     <div>Input</div>
+    <h1>cddfdfgdfg</h1>
+    </>
   )
 }
 
