@@ -6,6 +6,7 @@ const Loader = () => {
     <h1>this is loader</h1>
     <h1>loader</h1>
     <h1>loader</h1>
+    <h1>vfdfgvrg</h1>
     </>
   )
 }
